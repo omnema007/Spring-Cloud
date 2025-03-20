@@ -1,4 +1,4 @@
-package com.example.quizapp;
+package com.example.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,6 +17,10 @@ public class Question {
     private String option1;
     private String option2;
     private String option3;
+    private String option4;
+    private String rightAnswer;
+    private String difficultylevel;
+    private String category;
 
     public Integer getId() {
         return id;
@@ -90,8 +94,5 @@ public class Question {
         this.category = category;
     }
 
-    private String option4;
-    private String rightAnswer;
-    private String difficultylevel;
-    private String category;
+
 }
