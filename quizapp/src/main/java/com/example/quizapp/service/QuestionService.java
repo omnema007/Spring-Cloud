@@ -24,4 +24,9 @@ public class QuestionService {
         questionDao.save(question);
         return "success";
     }
+
+    public String deleteQuestion(Integer id) {
+        questionDao.deleteById(id);
+        return "delete successfully";
+    }
 }
